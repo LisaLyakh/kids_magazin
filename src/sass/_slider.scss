@@ -1,0 +1,173 @@
+.section-reviews {
+  padding: 80px 0 48px 0;
+
+  background-color: $secondary-color;
+
+  @media screen and (min-width: 768px) {
+    padding: 80px 0 80px 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 120px 0 120px 0;
+  }
+}
+.title_rewiews {
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: center;
+  font-family: Marck Script;
+  font-style: Regular;
+  font-size: 58px;
+  line-height: 72px;
+  align-items: center;
+
+  color: #D41443;
+  @media screen and (max-width: 767px) {
+      font-size: 27px;
+    }
+}
+
+.slider__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slider__box {
+  padding: 30px 50px 17px;
+  margin: 32px auto 36px auto;
+  border-radius: 24px;
+  background-color: #fafafa;
+
+  @media screen and (max-width: 767px) {
+    max-width: calc(100% - 40px);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    max-width: calc(100% - 148px);
+    padding: 27px 5px 29px 7px;
+    margin: 13px auto 31px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: calc(100% - 246px);
+    padding: 32px 107px 31px 105px;
+    margin: 16px auto 36px;
+  }
+}
+
+.slider__text {
+  position: relative;
+  z-index: 1;
+  padding: 0 8px 9px 15px;
+  margin: auto;
+  max-width: calc(100% - 40px);
+
+  background: repeating-linear-gradient(#fafafa 0 30px, #e1e1e1 0 31px);
+
+  color: $text-black-color;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding: 0 8px 9px 15px;
+    font-size: 14px;
+    line-height: 2.16;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0 8px 9px 15px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: 0;
+
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/slider-icon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.slider__name {
+  position: relative;
+
+  color: $text-black-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.86;
+  }
+}
+
+.slick-track {
+  display: flex;
+  overflow: hidden;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
+}
+
+.slick-list {
+  overflow: hidden;
+}
+.slider .slick-dots li {
+  margin-right: 18px;
+}
+
+.slider .slick-dots li.slick-active button {
+  width: 12px;
+  height: 12px;
+
+  background-image: url(../images/house.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.slider .slick-dots li button {
+  width: 12px;
+  height: 12px;
+
+  background-color: #d9d9d9;
+  border-radius: 50%;
+
+  font-size: 0;
+
+  border: none;
+  cursor: pointer;
+}
+
+.slick-dots li:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,70 @@
+<div class="backdrop is-hidden backdrop-tel" data-modal>
+  <div class="modal container">
+    <button class="modal__button" data-modal-close>
+      <svg class="modal__cross" width="14" height="14">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal__text">Форма реєстрації</p>
+    <form class="form">
+      <div class="form__user-name">
+        <label class="form__label" for="user_name"
+          ><span class="form__user-text">Прізвищє Ім'я По-батькові</span></label
+        >
+        <input
+          class="form__input"
+          type="text"
+          name="user-name"
+          id="user_name"
+          placeholder="Введіть П.І.Б."
+        />
+      </div>
+      <div class="form__email">
+        <label class="form__label" for="user_email"
+          ><span class="form__user-text">Пошта</span></label
+        >
+        <input
+          class="form__input"
+          type="email"
+          name="email"
+          id="user_email"
+          placeholder="Введіть пошту"
+        />
+      </div>
+      <div class="form__tel">
+        <label class="form__label" for="user_tel"
+          ><span class="form__user-text">Номер телефону</span></label
+        >
+        <input
+          class="form__input"
+          type="tel"
+          name="user-tel"
+          id="user_tel"
+          placeholder="Введіть номер телефону"
+        />
+      </div>
+      <div class="form__wrap">
+        <input
+          class="form__checkbox form__visually"
+          type="checkbox"
+          name="check"
+          id="check"
+        />
+        <label for="check" class="form__agreement">
+          <span class="form__icon-check">
+            <svg class="form__svg-check">
+              <use href="./images/symbol-defs.svg#icon-check-box"></use>
+            </svg>
+          </span>
+          Я згоден і приймаю
+          <a href="" class="accept">умови договору</a>
+        </label>
+      </div>
+      <div class="form__button-wrap">
+        <button class="form__button" type="submit">
+          <span class="form__button-text">Зареєструватися</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
